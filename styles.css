@@ -1,0 +1,129 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.popup-container {
+    width: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+input[type="datetime-local"],
+input[type="text"] {
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    outline: none;
+}
+
+input::placeholder {
+    color: #ddd;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#reminder-btn {
+    background: #28a745;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#reminder-btn:hover {
+    background: #218838;
+}
+
+#content-btn {
+    background: #007bff;
+    color: white;
+}
+
+#content-btn:hover {
+    background: #0056b3;
+}
+
+.tasks-container {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    overflow-y: auto;
+    max-height: 300px;
+}
+
+.task {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+.task:hover {
+    transform: scale(1.02);
+}
+
+.task p {
+    margin: 0;
+    font-weight: bold;
+}
+
+#remove-btn {
+    background: #dc3545;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#remove-btn:hover {
+    background: #b02a37;
+}
+
+#notificationSound {
+    display: none;
+}
+
+
+
+
+
